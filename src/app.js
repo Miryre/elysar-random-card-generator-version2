@@ -6,16 +6,37 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
+  
+
+  const buttonElement = document.querySelector(".btn");
+
+  buttonElement.addEventListener("click", () => {
+    displayCard();
+
+
+  })
+
+
+
   //inject card into dom/display card
 //function 0 will render card onto screen
   function displayCard() {
 
     document.querySelector(".wrapper").innerHTML =
-    `<div class="card mt-5">
-            <div><span class="top-suit float-start ms-3"></span></div>
-            <div class="value"></div>
-            <div><span class="bottom-suit float-end me-3"></span></div>
-          </div>`;
+    `
+    <div class="row  ">
+      <div class="col-4"></div>
+
+      <div class="col-4 d-flex justify-content-center">
+            <div class="card mt-5 ">
+              <div><span class="top-suit float-start ms-3"></span></div>
+              <div class="value"></div>
+              <div><span class="bottom-suit float-end me-3"></span></div>
+            </div>
+      </div>
+
+    <div class="col-4"></div>
+  </div>`;
 
        getSuitAndValue();   
  }

@@ -8,3 +8,19 @@ body{
     height: 800px;
     width: auto;
 }
+
+
+.card {
+    width: 15em;
+}
+
+.top-suit, .bottom-suit {
+    font-size: 4em;
+}
+
+.bottom-suit {
+    transform: rotate(180deg);
+}
+.value {
+    font-size: 5em;
+}
